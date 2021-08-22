@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.cloud.plat.common.security.service.UserDetailsServiceImpl,\
+  com.cloud.plat.common.security.component.PigSecurityInnerAspect
+

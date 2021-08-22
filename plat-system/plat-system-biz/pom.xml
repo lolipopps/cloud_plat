@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>plat-system</artifactId>
+        <groupId>com.cloud.plat</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>plat-system-biz</artifactId>
+
+    <dependencies>
+        <!--upms api、model 模块-->
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-system-api</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+        <!--日志处理-->
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-common-log</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-common-security</artifactId>
+            <version>${cloudplat.version}</version>
+            <scope>compile</scope>
+        </dependency>
+        <!--接口文档-->
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-common-swagger</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+        <!--mybatis 模块-->
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-common-base</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+
+        <!--注册中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+        <!--配置中心客户端-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+        <!--undertow容器-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-undertow</artifactId>
+        </dependency>
+        <!-- JWT -->
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.11.2</version>
+            <scope>compile</scope>
+        </dependency>
+
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>

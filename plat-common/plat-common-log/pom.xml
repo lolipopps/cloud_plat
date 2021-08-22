@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>plat-common</artifactId>
+        <groupId>com.cloud.plat</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>plat-common-log</artifactId>
+    <description>日志服务</description>
+    <dependencies>
+        <!--断路器依赖-->
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-common-feign</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+        <!--工具类核心包-->
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-common-core</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-common-base</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-system-api</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+
+
+
+
+        <!--安全依赖获取上下文信息-->
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>2.3.6.RELEASE</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

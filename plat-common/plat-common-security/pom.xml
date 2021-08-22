@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>plat-common</artifactId>
+        <groupId>com.cloud.plat</groupId>
+        <version>1.0.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>plat-common-security</artifactId>
+    <description>安全工具类</description>
+    <dependencies>
+        <!--工具类核心包-->
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-common-core</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+        <!--UPMS API-->
+        <dependency>
+            <groupId>com.cloud.plat</groupId>
+            <artifactId>plat-system-api</artifactId>
+            <version>${cloudplat.version}</version>
+        </dependency>
+
+
+        <!--安全模块-->
+        <dependency>
+            <groupId>org.springframework.security.oauth.boot</groupId>
+            <artifactId>spring-security-oauth2-autoconfigure</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.11.2</version>
+            <scope>compile</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>

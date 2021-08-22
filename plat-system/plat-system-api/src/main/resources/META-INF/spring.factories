@@ -1,0 +1,5 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.cloud.plat.admin.api.feign.fallback.RemoteUserServiceFallbackImpl,\
+  com.cloud.plat.admin.api.feign.fallback.RemoteTokenServiceFallbackImpl,\
+  com.cloud.plat.admin.api.feign.factory.RemoteUserServiceFallbackFactory,\
+  com.cloud.plat.admin.api.feign.factory.RemoteTokenServiceFallbackFactory

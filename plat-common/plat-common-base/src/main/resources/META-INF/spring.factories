@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.cloud.plat.common.base.redis.RedisTemplateHelper,\
+    com.cloud.plat.common.base.config.MybatisPlusConfig
